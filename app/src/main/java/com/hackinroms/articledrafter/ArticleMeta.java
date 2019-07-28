@@ -5,90 +5,90 @@ import com.google.gson.annotations.SerializedName;
 public class ArticleMeta {
 
     @SerializedName("current_page")
-    private Integer CurrentPage;
+    private int currentPage;
 
     @SerializedName("from")
-    private Integer FromOffset;
+    private int fromOffset;
 
     @SerializedName("last_page")
-    private Integer LastPage;
+    private int lastPage;
 
     @SerializedName("path")
-    private String UrlPath;
+    private String urlPath;
 
     @SerializedName("per_page")
-    private Integer ArticlesPerPage;
+    private int articlesPerPage;
 
     @SerializedName("to")
-    private Integer ToOffset;
+    private int toOffset;
 
     @SerializedName("total")
-    private Integer TotalArticles;
+    private int totalArticles;
 
-    public ArticleMeta(Integer currentPage, Integer fromOffset, Integer lastPage, String urlPath, Integer articlesPerPage, Integer toOffset, Integer totalArticles) {
-        CurrentPage = currentPage;
-        FromOffset = fromOffset;
-        LastPage = lastPage;
-        UrlPath = urlPath;
-        ArticlesPerPage = articlesPerPage;
-        ToOffset = toOffset;
-        TotalArticles = totalArticles;
+    public ArticleMeta(int currentPage, int fromOffset, int lastPage, String urlPath, int articlesPerPage, int toOffset, int totalArticles) {
+        this.currentPage = currentPage;
+        this.fromOffset = fromOffset;
+        this.lastPage = lastPage;
+        this.urlPath = urlPath;
+        this.articlesPerPage = articlesPerPage;
+        this.toOffset = toOffset;
+        this.totalArticles = totalArticles;
     }
 
-    public Integer getCurrentPage() {
-        return CurrentPage;
+    public int getCurrentPage() {
+        return currentPage;
     }
 
-    public void setCurrentPage(Integer currentPage) {
-        CurrentPage = currentPage;
+    public void setCurrentPage(int currentPage) {
+        this.currentPage = currentPage;
     }
 
-    public Integer getFromOffset() {
-        return FromOffset;
+    public int getFromOffset() {
+        return fromOffset;
     }
 
-    public void setFromOffset(Integer fromOffset) {
-        FromOffset = fromOffset;
+    public void setFromOffset(int fromOffset) {
+        this.fromOffset = fromOffset;
     }
 
-    public Integer getLastPage() {
-        return LastPage;
+    public int getLastPage() {
+        return lastPage;
     }
 
-    public void setLastPage(Integer lastPage) {
-        LastPage = lastPage;
+    public void setLastPage(int lastPage) {
+        this.lastPage = lastPage;
     }
 
     public String getUrlPath() {
-        return UrlPath;
+        return urlPath;
     }
 
     public void setUrlPath(String urlPath) {
-        UrlPath = urlPath;
+        this.urlPath = urlPath;
     }
 
-    public Integer getArticlesPerPage() {
-        return ArticlesPerPage;
+    public int getArticlesPerPage() {
+        return articlesPerPage;
     }
 
-    public void setArticlesPerPage(Integer articlesPerPage) {
-        ArticlesPerPage = articlesPerPage;
+    public void setArticlesPerPage(int articlesPerPage) {
+        this.articlesPerPage = articlesPerPage;
     }
 
-    public Integer getToOffset() {
-        return ToOffset;
+    public int getToOffset() {
+        return toOffset;
     }
 
-    public void setToOffset(Integer toOffset) {
-        ToOffset = toOffset;
+    public void setToOffset(int toOffset) {
+        this.toOffset = toOffset;
     }
 
-    public Integer getTotalArticles() {
-        return TotalArticles;
+    public int getTotalArticles() {
+        return totalArticles;
     }
 
-    public void setTotalArticles(Integer totalArticles) {
-        TotalArticles = totalArticles;
+    public void setTotalArticles(int totalArticles) {
+        this.totalArticles = totalArticles;
     }
 }
 

@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 public class Article {
 
     @SerializedName("id")
-    private Integer id;
+    private int id;
 
     @SerializedName("title")
     private String title;
@@ -14,17 +14,17 @@ public class Article {
     @SerializedName("body")
     private String body;
 
-    public Article(Integer id, String title, String body){
+    public Article(int id, String title, String body){
         this.id=id;
         this.title=title;
         this.body=body;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
